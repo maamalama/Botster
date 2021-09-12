@@ -1,8 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Botster.Core", "Botster.Core\Botster.Core.csproj", "{426DE637-93BF-47E3-A0C5-D13BEC517AC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Botster.Telegram", "Botster.Telegram\Botster.Telegram.csproj", "{13D2F642-3D11-4000-8AA9-D715E866F851}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{426DE637-93BF-47E3-A0C5-D13BEC517AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426DE637-93BF-47E3-A0C5-D13BEC517AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426DE637-93BF-47E3-A0C5-D13BEC517AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426DE637-93BF-47E3-A0C5-D13BEC517AC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13D2F642-3D11-4000-8AA9-D715E866F851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13D2F642-3D11-4000-8AA9-D715E866F851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13D2F642-3D11-4000-8AA9-D715E866F851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13D2F642-3D11-4000-8AA9-D715E866F851}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
