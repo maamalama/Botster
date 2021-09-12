@@ -27,3 +27,11 @@ jobs:
       with:
         branch: gh-pages
         folder: ./Botster.Telegram/bin/release/net5.0
+        
+    - name: Create File
+      uses: finnp/create-file-action@1.0.0
+      with:
+        branch: gh-pages
+      env:
+        FILE_NAME: "index.html"
+        FILE_DATA: "Test"
