@@ -1,0 +1,29 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup .NET 5
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '5.0.x'
+        include-prerelease: true
+        
+    - name: publish
+      run: |
+        cd Botster.Telegram
+        dotnet publish -c release
+      
+    - uses: JamesIves/github-pages-deploy-action@4.1.4
+      name: gh-pages publish
+      with:
+        branch: gh-pages
+        folder: ./Botster.Telegram/bin/release/net5.0
