@@ -1,12 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Botster.Telegram.TelegramService.Commands.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 
-
-namespace TgBot.Api.Controllers
+namespace Botster.Telegram.Controllers
 {
     [ApiController]
     [Route("api/message/update")]
