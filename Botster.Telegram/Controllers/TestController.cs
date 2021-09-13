@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Globalization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Botster.Telegram.Controllers
 {
@@ -7,6 +9,7 @@ namespace Botster.Telegram.Controllers
     public class TestController : ControllerBase
     {
         [HttpGet]
-        public IActionResult Get() => Ok("Working");
+        public IActionResult Get() => Ok($"Working {GetDateStr}");
+        private string GetDateStr => DateTime.Now.ToString(CultureInfo.InvariantCulture);
     }
 }
